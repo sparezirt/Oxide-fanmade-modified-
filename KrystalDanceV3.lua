@@ -392,7 +392,7 @@ end
         if exploit ~= "CaetSploit" then
         idwithoutthatbit= string.gsub(id,"Dances/","")
         if not isfile(id) then 
-         writefile(id,game:HttpGet("https://github.com/Nitro-GT/music/raw/refs/heads/main/"..idwithoutthatbit))
+         writefile(id,game:HttpGet("https://github.com/sparezirt/music"..idwithoutthatbit))
         end
        repeat task.wait() until isfile(id)
     end
@@ -929,6 +929,60 @@ sound69:Play()
         
     end
         end 
+end
+elseif k == "c" then
+    if dancing == false then
+        stopanim()
+        dancing = true
+        task.wait(.005)
+        sound69.SoundId = customasset("Dances/ForsakenHakariDance.mp3")
+        timeposcur = sound69.TimePosition
+        sound69:Play()
+        playanim(138019937280193)
+    else
+        stopanim()
+
+    end
+elseif k == "v" then
+    if dancing == false then
+        stopanim()
+        dancing = true
+        task.wait(.005)
+        sound69.SoundId = customasset("Dances/PopipoExtended.mp3")
+        timeposcur = sound69.TimePosition
+        sound69:Play()
+        playanim(115465103089127)
+    else
+        stopanim()
+
+    end
+elseif k == "p" then
+    if dancing == false then
+        stopanim()
+        dancing = true
+        task.wait(.005)
+        sound69.SoundId = customasset("Dances/Immaterial.mp3")
+        timeposcur = sound69.TimePosition
+        sound69:Play()
+        playanim(90127032448242)
+    else
+        stopanim()
+
+    end
+elseif k == "l" then
+    if dancing == false then
+        stopanim()
+        dancing = true
+        task.wait(.005)
+        sound69.SoundId = customasset("Dances/xavier's.mp3")
+        timeposcur = sound69.TimePosition
+        sound69:Play()
+        playanim(86319138773534)
+    else
+        stopanim()
+
+    end
+end
 end
 if k == "equals" then 
     playbacktrack = not playbacktrack
